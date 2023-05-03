@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+	<title>ICT | Exercise 4</title>
+
+	<style>
+		body {
+			background-color: #081d22;
+			font-family:'Darumadrop One', cursive;
+			font-size: 35px;
+
+		}
+		h1 {
+			font-family: 'Darumadrop One', cursive;
+			text-decoration: underline;
+
+		}
+		
+	</style>
+
+
+</head>
+
+
+<body>
+
+<h1 align="center" style="color: #ef2e33;">Online Conversion Calculator</h1>
+ 
+ 
+<h2 align="center" style="color: #1d7873;">Length Converter</h2>
+
+<img src="19y5.gif"> 
+
+<p align="center">
+  <label style="color: #679289;">Input Numbers</label>
+  <input id="inputNumbers" type="number" placeholder="Input Numbers" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+
+
+		<p align="center" style="color: #f5c096;">Kilometers: <span id="outputKiloV"></span></p>
+		<p align="center" style="color: #f5c096;">Hectometer: <span id="outputHectoV"></span></p>
+		<p align="center" style="color: #f5c096;">Decameter: <span id="outputDecaV"></span></p>
+		<p align="center" style="color: #f5c096;">Decimeter: <span id="outputDeciV"></span></p>
+		<p align="center" style="color: #f5c096;">Centimeters: <span id="outputCentiV"></span></p>
+		<p align="center" style="color: #f5c096;">Millimeters: <span id="outputMiliV"></span></p>
+
+			<script>
+			function LengthConverter(valNum) {
+  
+			  document.getElementById("outputKiloV").innerHTML=valNum/1000;
+			  document.getElementById("outputHectoV").innerHTML=valNum/100;
+			  document.getElementById("outputDecaV").innerHTML=valNum/10;
+			  document.getElementById("outputDeciV").innerHTML=valNum*10;
+			  document.getElementById("outputCentiV").innerHTML=valNum*100;
+			  document.getElementById("outputMiliV").innerHTML=valNum*1000;
+			}
+			</script>
+
+</body>
+</html>
